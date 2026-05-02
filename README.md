@@ -4,29 +4,30 @@ This system allows users to manage customers efficiently, including bulk operati
 ________________________________________
 
 
-Technologies Used
-Backend
-•	Java 8
-•	Spring Boot
-•	Spring Data JPA
-•	Maven
-•	JUnit
+# Technologies Used
+# Backend
 
-Frontend
+ •	Java 8
+ •	Spring Boot
+ •	Spring Data JPA
+ •	Maven
+ •	JUnit
+
+# Frontend
 •	React JS (Vite)
 •	Axios
 •	Tailwind CSS
 
-Database
+# Database
 •	MariaDB
 
-Libraries (Free & Stable)
+# Libraries (Free & Stable)
 •	Lombok
 •	FastExcel (for Excel processing)
 •	Apache PO
 
-Third-Party Libraries
-The following third-party libraries are used
+# Third-Party Libraries
+# The following third-party libraries are used
 
 Spring Boot Starter Web
 Spring Boot Starter Data JPA
@@ -39,7 +40,38 @@ Axios → API calls
 Lucide React → Icons
 React Hot Toast → Notifications
 
-application.properties file data
+________________________________________
+
+# Java version error
+   Ensure Java 17 is installed
+# Check:
+   java -version
+
+# Prerequisites
+
+# Make sure you have the following installed:
+
+Java 17+
+Maven (or use the included Maven Wrapper mvnw)
+MySQL / MariaDB
+IDE (Recommended: IntelliJ IDEA)
+
+# Clone the Repository
+
+git clone https://github.com/jawajawahar/customer-management-backend.git
+cd customer-management-backend
+
+# Build the Project
+
+# Using Maven Wrapper:
+
+./mvnw clean install
+
+# On Windows:
+
+mvnw clean install
+
+# application.properties file data
 
 spring.application.name=customer-management-backend
 
@@ -63,6 +95,7 @@ spring.jpa.show-sql=true
 # ===============================
 server.port=8080
 ________________________________________
+
 
  Features
 Customer Management
@@ -88,56 +121,6 @@ Master Data
 •	City and Country stored in database
 •	Not exposed in UI (as required)
 
-________________________________________
-Database Structure
-Tables:
-•	customer
-•	customer_mobiles
-•	address
-•	customer_family
-•	city
-•	country
-
-
-DDL and DML scripts are included in:
-
-database/schema.sql
-database/data.sql
-________________________________________
-
-
-📂 Project Structure
-
-customer-management-system/
-│
-├── backend/        # Spring Boot backend
-├── frontend/       # React frontend
-├── database/       # SQL scripts (DDL + DML)
-├── sample-excel/   # Excel template
-└── README.md
-________________________________________
-
-
-⚙️ How to Run the Project
- 1. Database Setup
-    
-1.	Create database:
-CREATE DATABASE customer_management;
-
-3.	Run:
-SOURCE database/schema.sql;
-SOURCE database/data.sql;
-________________________________________
-
-2. Backend Setup
-Navigate to backend folder:
-cd backend
-Run the application:
-./mvnw spring-boot:run
-Or:
-mvn spring-boot:run
-Backend will start on:
-http://localhost:8080
 ________________________________________
 
  Frontend Setup
